@@ -251,7 +251,7 @@ description = """<h5>This is the demo of MiniGPT4-video Model.</h5>"""
 project_page = """<p><a href='https://vision-cair.github.io/MiniGPT4-video/'><img src='https://img.shields.io/badge/Project-Page-Green'></a></p>"""
 code_link="""<p><a href='https://github.com/Vision-CAIR/MiniGPT4-video'><img src='https://img.shields.io/badge/Github-Code-blue'></a></p>"""
 paper_link="""<p><a href=''><img src='https://img.shields.io/badge/Paper-PDF-red'></a></p>"""
-video_path=""
+#video_path=""
 with gr.Blocks(title="MiniGPT4-video 🎞️🍿",css=text_css ) as demo :
     # with gr.Row():
     #     with gr.Column(scale=2):
