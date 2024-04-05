@@ -342,7 +342,7 @@ with gr.Blocks(title="MiniGPT4-video 🎞️🍿",css=text_css ) as demo :
 
 
 if __name__ == "__main__":
-    demo.queue().launch(share=True,show_error=True)
+    demo.queue(max_size=10).launch(share=False,show_error=True, show_api=False)
 
     
     
