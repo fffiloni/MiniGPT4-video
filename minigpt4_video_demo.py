@@ -153,8 +153,8 @@ def run (video_path,instruction,model,vis_processor,gen_subtitles=True):
     # remove the subtitle file and the video file
     if subtitle_path:
         os.system(f"rm {subtitle_path}")
-    if video_path.split('.')[-1] == 'mp4' or video_path.split('.')[-1] == 'mkv' or video_path.split('.')[-1] == 'avi':
-        os.system(f"rm {video_path}")
+    #if video_path.split('.')[-1] == 'mp4' or video_path.split('.')[-1] == 'mkv' or video_path.split('.')[-1] == 'avi':
+    #    os.system(f"rm {video_path}")
     return answers[0]
 
 def run_single_image (image_path,instruction,model,vis_processor):
