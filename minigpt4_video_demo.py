@@ -16,6 +16,11 @@ import shutil
 from PIL import Image
 from moviepy.editor import VideoFileClip
 from theme import minigptlv_style, custom_css,text_css
+
+from huggingface_hub import login
+hf_token = os.environ.get('HF_TKN')
+login(token=hf_token)
+
 def create_video_grid(images, rows, cols,save_path):
     image_width, image_height = images[0].size
     grid_width = cols * image_width
